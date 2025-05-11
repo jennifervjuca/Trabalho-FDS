@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trabalho FDS</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <!--Tipos de format ()
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-aat (Apple Advanced Typography)
+    - svg 
+  -->
+
+  <style>
+    @font-face {
+      font-family: "Birds";
+      src: url("fonts/Birds of Paradise.ttf") format("truetype");
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Todo o conteúdo do site fica aqui  -->
+  <div class="conteudo">
+    <div id="Titulo">
+      <h1>Jennifer Lorraine Vieira Jucá</h1>
+    </div>
+    <p>Meu nome é Jennifer Lorraine Vieira Jucá, tenho 24 anos, moro em Rio Branco - Acre e estou cursando minha segunda graduação, em área diversa, pois já sou formada em Direito. Sempre fui apaixonada por conhecimento e, recentemente, decidi mergulhar no universo da tecnologia, iniciando o curso de Análise e Desenvolvimento de Sistemas.</p>
+    <ul>
+      <li>Jogar</li>
+      <li>Ler</li>
+      <li>Escrever</li>
+    </ul>
+    <!-- Aprendi sobre <figure> e <figcaption> na apostila Caelum sobre HTML -->
+    <!--Imagem do meu hobbie-->
+    <figure>
+      <img src="images/Hobbie.avif" width="400" style="display: block; margin: 20px auto; border-radius: 8px;">
+      <figcaption>Meu hobbie favorito</figcaption>
+    </figure>
+    <!--Fim da imagem do meu hobbie-->
+    <!--Início da minha tabela-->
+    <table>
+      <tr>
+        <td>Alemanha</td>
+        <td><img src="images/Alemanha.jpg" width="400"></td>
+      </tr>
+      <tr>
+        <td>Itália</td>
+        <td><img src="images/Itália.jpg" width="400"></td>
+      </tr>
+      <tr>
+        <td>Canadá</td>
+        <td><img src="images/Canadá.jpg" width="400"></td>
+      </tr>
+    </table>
+    <!--Fim da minha tabela-->
+    <br>
+    <br>
+    <p style="text-align: center;">
+      Site do <a href="https://www.mpac.mp.br/" target="_blank">Ministério Público do Acre</a>
+    </p>
+    <br>
+    <button class="btn" onclick="mostrarMensagem()">Botão motivacional</button>
+
+    <p id="mensagem" style="text-align: center;"> </p>
+    <!-- JavaScript no final da página, como boa prática. Fica dentro do body -->
+  </div> <!-- fim da div .conteudo -->
+  <script src="script.js"></script>
+</body>
+
+</html>
